@@ -103,12 +103,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #1db096;
+  color: red;
+  background-color: gray;
+animation-name:change;
+animation-duration:8s;
   border-radius: 20px;
   box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2);
 }
-
+@keyframes change{ 
+0%{background-color:gray;}
+ 25%{background-color:green;}
+50%{background-color:white;} 
+75%{background-color:blue;} 
+100%{background-color:yellow;}
+ }
 .resume-btn:hover {
   background-color: #23cdaf;
   transition: all ease 0.2s;
